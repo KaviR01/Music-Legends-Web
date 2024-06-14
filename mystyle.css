@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Young+Serif&display=swap');    /* using google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/*----------------------------------------------------HOME PAGE----------------------------------------------------------------------------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------- navigation bar -----------------------------*/
+.maincontainer{
+    width:100%;
+    box-sizing: border-box;
+    overflow: hidden; 
+  }
+  
+  .navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  
+  }
+  
+  .menu-icon{
+  width: 40px;
+  cursor: pointer;
+  display: none;
+  
+  }
+  
+  nav{
+  flex: 1;
+  text-align: right;
+  background-color: #333;
+  height: 63px;
+  
+  }
+  
+  nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding-top: 0.5%;
+  
+  }
+  
+  nav ul li a{
+  text-decoration: none;
+  color: #ffff;
+  font-size: 30px;
+  padding: 20px 20px;
+  }
+  
+  nav ul li a:hover:not(.active) {      /* negation psuedo class */
+  background-color: #cd6262; 
+  transition: background-color 1s ease;
+  }
+  
+  .active {
+  background-color: #736e73;
+  }
+  
+  .img-logo{
+  width: 50px;
+  height:63px;
+  cursor: pointer;
+  }
+
+/*---------------------------------------------------------------------*/
+
+h1{
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 130px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    text-shadow: 8px 5px rgb(212, 210, 210);     /* Text Effects */ 
+  }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border: 5px solid rgb(56, 18, 144);      /* border */
+    border-radius: 20px;                         /* rounded corners*/
+} 
+
+
+.home-heading2{
+    color: black;
+    font-family: 'Young Serif', serif;
+    font-size: 40px;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+a{
+  font-family: 'Lato', sans-serif;     /* google fonts */
+}
+
+.home-body{
+    background: linear-gradient(rgba(132, 74, 191,0.7),rgba(167, 71, 167,0.7), rgba(195, 84, 195,0.7),rgba(215, 134, 215,0.7));   /* Gradient */
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+/*-------------------- Text Box ----------------------------*/
+.box1{
+    background-color: rgb(171, 228, 230);
+    margin-top: 50px;
+    margin: 80px 80px;
+    padding: 10px 10px;
+    border: 3px dotted black;
+    box-shadow: 10px 10px;                      /*shadows*/
+}
+.text1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.texthigh{
+    color: brown;         /* Text effects */
+}
+
+
+
+/*-----------------------  logo card ----------------------------------------*/
+.cardlogo {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-inner {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease;     /* transition */
+    transform-style: preserve-3d;
+}
+
+.cardlogo:hover .card-inner {
+    transform: rotateY(180deg);       /* transform */
+}
+
+.card-front,
+.card-back {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+}
+
+.card-back {
+    transform: rotateY(180deg);        /*transform*/
+}
+
+.card-img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border: 7px solid rgb(133, 127, 127);
+    border-radius: 10%;
+    padding: 5px;
+}
+
+/*--------------------- footer ------------------------------------------*/
+
+footer{
+background-color: #111;
+margin-top: 20px;
+
+}
+
+
+.socialicons{
+display: flex;
+justify-content: center;
+}
+
+.socialicons a{
+text-decoration: none;         /* Text effects */
+padding: 10px;
+background-color: white;
+margin: 10px;
+border-radius: 50%;
+}
+
+.socialicons a i{
+font-size: 2em;
+color: black;
+opacity: 0.9;              
+}
+
+.socialicons a:hover{
+background-color: #111;
+transition: 0.5s;                     /* user action psuedo class */
+}
+
+.socialicons a:hover i{
+color: white;
+transition: 0.5s;
+}
+
+.footernav{
+margin: 30px 0;
+}
+
+.footernav ul{
+display: flex;
+justify-content: center;
+list-style-type: none;
+}
+
+.footernav ul li a{
+color: white;
+margin: 20px;
+text-decoration: none;
+font-size: 1.3em;
+opacity: 0.7;
+transition: 0.5s;
+}
+
+.footernav ul li a:hover{
+opacity: 1;
+}
+
+.footerbottom{
+background-color: #000;
+padding: 20px;
+text-align: center;
+}
+
+.footerbottom p{
+color: white;
+}
+
+.designer{
+opacity: 0.7;
+text-transform: uppercase;          /* Text effects */
+letter-spacing: 1px;
+font-weight: 400;
+margin: 0px 5px;
+}
+
+
+/*---------------------  Responsive Navigation bar & footer  ------------------------------*/
+
+@media (max-width:700px) {
+    nav{
+        background: transparent
+    }
+    nav ul{
+      width: 100%;
+      background: linear-gradient(#ff54a2, #ff575a);        /* Gradient  */
+      position:absolute;
+      top: 75px;
+      right: 0;
+      z-index: 2;
+    
+    }
+    
+    nav ul li{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    nav ul li a{
+      color: #fff;
+    }
+    
+    
+    nav ul li a:hover:not(.active) {
+        background-color: transparent;
+        transition: background-color 1s ease; 
+    }
+    
+    .active {
+        background-color: transparent;
+        color: black;
+    }
+    
+    .menu-icon{
+      display: block;
+      margin: 20px;
+    }
+    
+    #menuList{
+      overflow: hidden;
+      transition: 0.5s;
+    }
+
+
+    /*-------------------------------------------*/
+    footer ul{
+        flex-direction: column;
+    }
+    
+    footer ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .container,.container1{
+        width: 100%;
+    }
+
+     /*---------------------------------------*/
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  
+    .center{
+      width: 100%;  
+   } 
+
+   .socialicons a{
+    margin: 5px; 
+    }
+
+
+  .socialicons a i{
+    font-size: 1em;
+    
+    }
+  
+}
+
+/*---------------------  Responsive HOME PAGE  --------------------------*/
+
+@media (max-width : 600px) {
+  .home-body h1{
+    font-size: 100px;
+  }
+
+  .box1{
+    margin-top: 20px;
+    margin: 20px 20px;
+    padding: 5px 5px;
+    
+}
+
+.text1{
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.home-body .home-heading2{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+  
+}
+
+
+
+
+    /*------------------------------------------------------------*/
+
+    /* Float four columns side by side */
+.column {
+  margin: auto;
+  float: left;
+  width: 350px;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: auto;
+  padding-bottom:20px ;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* --------------------------   Responsive columns ----------------------- */
+
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  
+  }
+
+  .center{
+    width: 100%;
+   
+} 
+}
+
+/* ---------------------  card images -------------------------- */
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);          /* shadows */
+  padding: 16px;
+  text-align: center;
+  background-color: rgb(89, 87, 146,0.5);                  /* color semi transparent*/
+  border: 2px solid black;
+  border-radius: 10%;                            /* rounded corers */
+  
+}
+
+.card-content{
+  list-style-type: none;    
+  font-size: 17px;                       /* Text effect */
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+img[alt*="member"]{
+  border: 5px solid rgb(15, 15, 79);           /* attribute selectors*/
+  border-radius: 10%;
+
+}
+
+
+/*------------------------------  FORM PAGE ------------------------------------------------------------------------------------------------------------------------*/
+
+.form-body{
+    justify-content: center;
+    align-items: center;
+    background : linear-gradient(135deg,#71b7e6,#9b59b6);   
+}
+
+.form-container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin: 10% auto;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.form-container .title{
+    font-size: 25px;
+    font-weight: 500;          /* text effects */
+   
+}
+
+
+.form-container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100%/2 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+form .message .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.message .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.message .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.message .input-box input:focus{
+    border-color: #9b59b6;
+}
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+
+form input[type="radio"]{      /* attribute selector */
+    display: none;
+}
+form input:invalid{                            /* validity psuedo class */
+  background-color: rgb(133, 127, 127,0.5)    /* color semi transparent */
+}
+
+form .form-button{
+   height: 45px;
+   margin: 45px 0   
+}
+
+form .form-button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background : linear-gradient(135deg,#71b7e6,#9b59b6);    /* Gradient */
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+form .form-button input:hover{                                     /* user action psuedo class */
+    background : linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+
+@media (max-width : 584px) {
+    .form-container{
+        max-width: 100%;  
+    }
+
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .gender-details .category{
+        width: 100%;
+    }
+
+    .form-container form .user-details{
+       max-height: 300px;
+       overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar{
+        width: 0;
+
+    }
+
+  
+}
+
+
+/*--------------------------------------- BLOG PAGE ----------------------------------------------------------------------------------------------------------------*/
+    .blog-body{
+      background-color: #71b7e6;
+    }
+  /* Create two equal columns that floats next to each other */
+  .column-blog {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    height: 2500px; 
+    border: 2px solid black;
+    background-color: rgb(160, 150, 208);
+    
+
+  }
+  
+  /* Clear floats after the columns */
+  .row-blog:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .main-content{
+    padding-top: 60px;
+
+  }
+
+ 
+  .centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 5px solid white;
+    border-radius: 5%;
+  }
+
+  
+  .home-heading2{
+    font-family: 'Young Serif', serif;
+    font-size: 40px;
+    margin-left: 50px;
+    text-decoration: underline;        /* Text effects */
+}
+
+.column-content{
+    padding-left: 20px;
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.column-content::after{           /*pseudo-element to insert text content.will add the text "~~End~~" after the column-content class */
+  content: "~~End~~";
+}
+
+.date{
+    text-align: right;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+.column-blog p~ul{                /* relational selector -Selects every <ul> element that is preceded by a <p> element */
+    color: rgb(5, 82, 56)
+}
+
+ol > li{              /* chlid combinator */
+    color: rgb(2, 2, 75);
+}
+
+.column-blog p > u{          /* child combinator */
+  color: rgb(2, 2, 75);
+}
+
+p[class~="date"] {              /* attribute selectors  */
+    color: brown;
+  }
+
+  .column-content p:nth-child(9){
+  color:rgb(99, 18, 108);           /* nth psuedo class - targets even positioned p tags ,  position is derived from each sibling inside specifided class/*/ 
+  text-decoration: underline;
+  
+}
+
+.column-content p:first-of-type::first-letter{
+  font-size: 30px;                                 /* structural selectors */
+}
+
+span[class|="list"]{
+  color: #186795;                          /* attribute selectors */
+}
+
+/* ---------------------- Responsive blog page ---------------- */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media  (max-width: 600px) {
+  .column-blog {
+    width: 100%;
+    height: auto;
+  }
+  .centerimg{
+      width: 100%;
+      height: auto;
+  }
+
+  .column-blog .column-content{
+    font-size: 12px;
+  }
+
+  .column-blog .home-heading2{
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .column-blog .centerimg {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+}
+
+@media  (max-width: 1150px) {
+  .column-blog {
+    width: 100%;
+    height: auto;
+  }
+  .centerimg{
+      width: 100%;
+      height: auto;
+  }
+
+
+  .column-blog .home-heading2{
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .column-blog .centerimg {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+}
+
+
+/*------------------------------------------- ABOUT PAGE -----------------------------------------------------------------------------------------------------------*/
+
+
+#main{
+  color: rgb(156, 100, 100);       /* specificity into consideration */ 
+}
+
+.demo1{
+  color: red;                  
+}
+
+.demo2{
+  color: rgb(156, 100, 100); 
+}
+
+.about-body{
+	font-family:Arial ,sans-serif;
+	background-image:url("pics/back1.png");
+	background-size:100% 100%;
+}
+
+.about-heading{
+  font-family: 'Lobster Two', sans-serif;
+  font-size: 130px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-shadow: 8px 5px rgb(67, 166, 194);        /* text effects */
+}
+
+.about-div{
+  margin-left: 30%;
+  margin-right: 30%;
+  transform: rotate(5deg);
+}
+
+.about-div1 {
+  animation-timing-function: linear;
+  position: relative;                                   /* animation */
+  animation: mymove 5s infinite;
+}
+
+
+@keyframes mymove {
+  from {left:-200px}
+  to {left: 50%;}
+}
+
+
+.section{
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+	text-align:center;
+	font-size:20px;
+  transform: rotate(5deg);              /* transform */
+  border: 7px double black;
+  border-radius: 15px 50px; 
+}
+
+.section .line{
+  margin: auto;
+	width:50%;
+  border: 2px solid rgb(92, 84, 84);
+	border-radius: 5px;                       /* rounded border */
+	opacity:0.5;
+}
+
+.button {
+  border: 3px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #3A1BE8;
+  border-radius:12px;
+}
+
+.button:hover {                            /* user action psuedo class */
+	background-color: #4288ED;
+	color:black;
+	font-weight:bold;
+}
+
+
+.section p:first-child{
+  color: rgb(5, 24, 96);      /* structural selectors */
+  font-weight: bold;
+}
+
+p ~ .info {                      /* relational selectors */
+  font-style: italic;
+}
+
+/*------------------------------- Responsive About page ---------------------------*/
+
+  @media(max-width : 700px){
+    .section{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 15px;
+    }
+
+    .about-heading{
+      font-size: 50px;
+    }
+
+    .about-div{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    
+  }
+
+

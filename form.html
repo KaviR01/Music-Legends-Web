@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>myPortfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="mystyle.css"> 
+</head>
+<body class="form-body">
+                              <!-- navigation bar -->
+    <header>
+        <div class="maincontainer">
+            <div class="navbar">
+                <img src="pics/LOOGO.jpg" alt="logo" class="img-logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="blog.html">Blog Posts</a></li>
+                        <li><a class="active"  href="form.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li> 
+                    </ul>
+                </nav>
+                <img src="pics/menu.png" alt="menu icon" class="menu-icon" onclick="togglemenu()">
+            </div>
+        </div> 
+    </header> 
+                                       <!--  Registration form -->
+    <div class="form-container">
+        <div class="title">Registration</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <label class="details">First Name</label>
+                    <input type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-box">
+                    <label class="details">Last Name</label>
+                    <input type="text" placeholder="Enter your last name" required>
+                </div>
+                <div class="input-box">
+                    <label class="details">Username</label>
+                    <input type="text" placeholder="Enter your username" required>
+                </div>
+                <div class="input-box">
+                    <label class="details">Email</label>
+                    <input type="email" placeholder="hello@gmail.com" required>
+                </div>
+                <div class="input-box">
+                    <label class="details">Phone number</label>
+                    <input type="tel" placeholder="+94xxxxxxxxx" required>
+                </div>
+                <div class="input-box">
+                    <label class="details">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box">
+                    <label class="details">Confirm Password</label>
+                    <input type="password" placeholder="Confirm your password" required>
+                </div>
+            </div>
+                                      <!-- message box -->
+            <div class="message">
+                <div class="input-box">
+                    <label class="details">Message</label>
+                    <input type="text" placeholder="Type your message here" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span  class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+                                  <!-- Register button -->
+            <div class="form-button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if (menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "200px";  
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";   
+                }
+        }
+    </script>
+                                   <!-- footer -->
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a target="_blank" href="https://ibighit.com/bts/eng/"><i class="fa-brands fa-google"></i></a>
+                <a href="https://weverse.io/bts/artistpedia"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://web.facebook.com/bangtan.official/?_rdc=1&_rdr"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bts.bighitofficial/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/bts_twt"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@BTS/videos"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@bts_official_bighit"><i class="fa-brands fa-tiktok"></i></a>  
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog Posts</a></li>
+                    <li><a href="form.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li> 
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2023: Designed by <span class="designer">Kavindi</span></p>
+        </div>
+    </footer>
+</body>
+</html>
+    
